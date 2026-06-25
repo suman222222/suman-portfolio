@@ -11,11 +11,15 @@
 
     <!-- Navbar -->
     <nav>
-        <div class="logo">SK</div>
+        <a class="logo" href="#home" aria-label="Suman Kapri home">
+            <img src="images/suman-profile.jpg" alt="Suman Kapri profile photo">
+            <span>Suman Kapri</span>
+        </a>
 
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -29,17 +33,18 @@
         <div class="hero-content">
             <h1>Hi, I'm Suman Kapri </h1>
 
-            <h2>B.Sc. Computing Student</h2>
+            <h2>Web Developer and Digital Creator</h2>
 
             <p>
-                Aspiring Software Developer passionate about
-                creating practical web applications and solving
-                real-world problems through technology.
+                I enjoy learning new technologies, creating web projects,
+                exploring UI/UX design, and continuously improving my
+                problem-solving skills. My goal is to become a skilled
+                software developer and build products that make a real impact.
             </p>
 
             <div class="buttons">
                 <a href="#projects">View Projects</a>
-                <a href="#contact">Contact Me</a>
+                <a href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
             </div>
         </div>
 
@@ -50,11 +55,48 @@
 
         <h2>About Me</h2>
 
-        <p>
-            I am a B.Sc. Computing student from Nepal interested
-            in software development, web technologies, Git,
-            GitHub, and building useful digital products.
-        </p>
+        <div class="about-wrapper">
+            <div class="about-image">
+                <img src="images/suman-profile.jpg" alt="Suman Kapri profile photo">
+            </div>
+
+            <div class="about-content">
+                <h3>B.Sc. Computing Student and Aspiring Software Developer</h3>
+
+                <p>
+                    I am a B.Sc. Computing student from Nepal interested in
+                    software development, web technologies, Git, GitHub, and
+                    building useful digital products.
+                </p>
+
+                <div class="about-details">
+                    <div>
+                        <span>Full Name</span>
+                        <strong>Suman Kapri</strong>
+                    </div>
+                    <div>
+                        <span>Address</span>
+                        <strong>Nepal</strong>
+                    </div>
+                    <div>
+                        <span>Nationality</span>
+                        <strong>Nepali</strong>
+                    </div>
+                    <div>
+                        <span>Freelance</span>
+                        <strong>Available</strong>
+                    </div>
+                    <div>
+                        <span>Email</span>
+                        <strong>kaprisuman222@gmail.com</strong>
+                    </div>
+                </div>
+
+                <a class="about-resume-button" href="resume.pdf" target="_blank" rel="noopener">
+                    View Resume
+                </a>
+            </div>
+        </div>
 
     </section>
 
@@ -63,14 +105,72 @@
 
         <h2>Skills</h2>
 
-        <div class="skill-container">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>Git</div>
-            <div>GitHub</div>
-            <div>Java</div>
-            <div>Figma</div>
+        <div class="github-skill-card">
+            <div class="skill-header">
+                <div>
+                    <span>Tracked from GitHub</span>
+                    <h3>Live Coding Skill Share</h3>
+                </div>
+                <a href="https://github.com/suman222222" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+
+            <p class="skill-summary" id="githubSkillSummary">
+                Loading public repository language data...
+            </p>
+
+            <div class="skill-bars" id="githubSkillBars">
+                <div class="skill-row">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <strong>35%</strong>
+                    </div>
+                    <div class="skill-track">
+                        <span style="width:35%"></span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <strong>25%</strong>
+                    </div>
+                    <div class="skill-track">
+                        <span style="width:25%"></span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <strong>20%</strong>
+                    </div>
+                    <div class="skill-track">
+                        <span style="width:20%"></span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <strong>10%</strong>
+                    </div>
+                    <div class="skill-track">
+                        <span style="width:10%"></span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-info">
+                        <span>Java</span>
+                        <strong>10%</strong>
+                    </div>
+                    <div class="skill-track">
+                        <span style="width:10%"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-container">
+                <div>Git</div>
+                <div>GitHub</div>
+                <div>Figma</div>
+            </div>
         </div>
 
     </section>
@@ -102,11 +202,38 @@
 
         <h2>Contact Me</h2>
 
-        <p>Email: your-email@example.com</p>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>
+                    Have a project idea, freelance opportunity, or collaboration
+                    in mind? Send me a message and I will get back to you.
+                </p>
 
-        <p>GitHub: github.com/sumankapri</p>
+                <div class="contact-list">
+                    <a href="mailto:kaprisuman222@gmail.com">
+                        <span>Email</span>
+                        <strong>kaprisuman222@gmail.com</strong>
+                    </a>
+                    <a href="https://github.com/suman222222" target="_blank" rel="noopener">
+                        <span>GitHub</span>
+                        <strong>github.com/suman222222</strong>
+                    </a>
+                    <a href="https://www.linkedin.com/in/suman-kapri-25614127b" target="_blank" rel="noopener">
+                        <span>LinkedIn</span>
+                        <strong>linkedin.com/in/suman-kapri-25614127b</strong>
+                    </a>
+                </div>
+            </div>
 
-        <p>LinkedIn: linkedin.com/in/sumankapri</p>
+            <form class="contact-form" action="mailto:kaprisuman222@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
     </section>
 
