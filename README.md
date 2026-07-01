@@ -54,14 +54,14 @@ git clone https://github.com/suman222222/my-portfolio.git
 2. Open the project folder
 
 ```bash
-cd Suman-Kapri-Portfolio
+cd my-Portfolio
 ```
 
 3. Open `index.html` in your browser
 
 ## Contact
 
-GitHub: https://github.com/sumankapri
+GitHub:https://github.com/suman222222
 
 LinkedIn: 
 
