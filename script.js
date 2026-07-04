@@ -1,7 +1,11 @@
-const githubUsername = "suman222222";
+// ===== CONFIGURATION =====
+const githubUsername = "suman222222"; // CHANGE THIS TO YOUR REAL USERNAME
+
+// ===== DOM ELEMENTS =====
 const skillBars = document.getElementById("githubSkillBars");
 const skillSummary = document.getElementById("githubSkillSummary");
 
+// ===== LANGUAGE COLORS =====
 const colors = {
     HTML: "#e34c26",
     CSS: "#563d7c",
@@ -15,6 +19,7 @@ const colors = {
     Shell: "#89e051"
 };
 
+// ===== FETCH & RENDER FUNCTION =====
 async function fetchGithubSkills() {
     try {
         const reposResponse = await fetch(
@@ -59,13 +64,15 @@ async function fetchGithubSkills() {
             .slice(0, 6);
 
         renderSkills(skills);
-        skillSummary.textContent = `Based on ${publicRepos.length} public GitHub repositories from @${githubUsername}.`;
+        skillSummary.textContent = `📊 Based on ${publicRepos.length} public repositories from @${githubUsername}.`;
     } catch (error) {
-        skillSummary.textContent =
-            "Showing starter skill estimates. GitHub data will update automatically when available.";
+        skillSummary.textContent = "⚠️ GitHub data could not be loaded. Showing starter skills below.";
+        // BONUS: Show static fallback skills if GitHub fails
+        renderFallbackSkills();
     }
 }
 
+// ===== RENDER SKILL BARS =====
 function renderSkills(skills) {
     skillBars.innerHTML = "";
 
@@ -94,4 +101,17 @@ function renderSkills(skills) {
     });
 }
 
+// ===== FALLBACK SKILLS (IF GITHUB FAILS) =====
+function renderFallbackSkills() {
+    const fallbackSkills = [
+        { language: "Java", percent: 40 },
+        { language: "Python", percent: 30 },
+        { language: "HTML", percent: 15 },
+        { language: "CSS", percent: 10 },
+        { language: "JavaScript", percent: 5 }
+    ];
+    renderSkills(fallbackSkills);
+}
+
+// ===== RUN IT =====
 fetchGithubSkills();

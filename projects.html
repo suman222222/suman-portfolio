@@ -1,80 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Suman Kapri</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <header>
-    <nav>
-        <div class ="logo"> Suman Kapri" </div>
-        <ul class="nav-links"></ul>
-        <li><a href ="index.html"> Home  </a></li>
-        <li><a href ="skills.html"> Skills </a></li>
-        <li><a href ="projects.html"> Projects </a></li>
-    </nav>
-   </header >
-   
 
-    <section id="top" class="hero">
-        <div class="hero-content">
-            <h1>My Projects</h1>
-            <h2>Building practical ideas with clean design and modern web tech</h2>
-            <p>
-                Here are a few of the projects I’ve worked on and the skills I used to bring them to life.
-                Each one reflects my focus on usability, clear structure, and continuous learning.
-            </p>
-            <div class="buttons">
-                <a href="index.html">Back to Home</a>
-                <a href="https://github.com/suman222222" target="_blank" rel="noopener">View GitHub</a>
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+        <nav>
+            <div class="logo">Suman Kapri</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects-section">
+        <h2>My Projects</h2>
+        <p class="projects-intro">Here are some projects I've built or am currently working on:</p>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3> Network Subnet Calculator</h3>
+                <p>A tool built with JavaScript that calculates subnet masks, network addresses, and host ranges.</p>
+                <span class="project-tag">Networking</span>
+                <span class="project-tag">JS</span>
+                <a href="#" class="project-link">View Details →</a>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3> Java Library Management System</h3>
+                <p>A console-based app using Java and MySQL (XAMPP) to manage book borrowing and returns.</p>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">MySQL</span>
+                <a href="#" class="project-link">View Details →</a>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3> Personal Portfolio (This site!)</h3>
+                <p>Built from scratch with HTML, CSS, and Git. Designed in Figma first, then hand-coded.</p>
+                <span class="project-tag">HTML/CSS</span>
+                <span class="project-tag">Figma</span>
+                <a href="#" class="project-link">View Details →</a>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Featured Work</h2>
-
-        <div class="project-grid">
-            <div class="project-card coming-soon-card">
-                <h3>Coming Soon</h3>
-                <p>New projects are currently being built and will appear here soon.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Let’s Build Something</h2>
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <h3>Interested in working together?</h3>
-                <p>I’m open to freelance work, learning projects, and collaborations that turn ideas into real products.</p>
-                <div class="contact-list">
-                    <a href="mailto:kaprisuman222@gmail.com">
-                        <span>Email</span>
-                        <strong>kaprisuman222@gmail.com</strong>
-                    </a>
-                    <a href="https://github.com/suman222222" target="_blank" rel="noopener">
-                        <span>GitHub</span>
-                        <strong>github.com/suman222222</strong>
-                    </a>
-                </div>
-            </div>
-
-            <form class="contact-form" action="mailto:kaprisuman222@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="subject" placeholder="Subject" required>
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>© 2026 Suman Kapri. All Rights Reserved.</p>
+        <p>&copy; 2026 Suman Kapri. Built with  patience.</p>
     </footer>
 
     <script src="script.js"></script>

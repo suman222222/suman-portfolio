@@ -1,117 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills | Suman Kapri</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <header>
-    <nav>
-        <div class ="logo"> Suman Kapri" </div>
-        <ul class="nav-links"></ul>
-        <li><a href ="index.html"> Home  </a></li>
-        <li><a href ="skills.html"> Skills </a></li>
-        <li><a href ="projects.html"> Projects </a></li>
-    </nav>
-   </header >
 
-    <section id="top" class="hero">
-        <div class="hero-content">
-            <h1>My Skills</h1>
-            <h2>Focused on clean code, responsive design, and practical problem solving</h2>
-            <p>
-                These are the core areas I’m developing through projects, practice, and continuous learning.
-                I enjoy turning ideas into useful digital experiences with strong foundations.
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+        <nav>
+            <div class="logo">Suman Kapri</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills-section">
+        <h2>My Tech Toolbox</h2>
+        <p class="skills-intro">What I learned in Year 1 and what I'm sharpening this summer:</p>
+        
+        <div class="skills-grid">
+            <!-- Card 1: Programming -->
+            <div class="skill-card">
+                <h3>💻 Programming</h3>
+                <ul>
+                    <li>Java (BlueJ)</li>
+                    <li>Python (IDLE)</li>
+                    <li>HTML5 &amp; CSS3</li>
+                    <li>JavaScript (Basic)</li>
+                </ul>
+            </div>
+            
+            <!-- Card 2: Networking -->
+            <div class="skill-card">
+                <h3>🌐 Networking</h3>
+                <ul>
+                    <li>Cisco Packet Tracer</li>
+                    <li>TCP/IP &amp; DHCP</li>
+                    <li>Subnetting</li>
+                </ul>
+            </div>
+            
+            <!-- Card 3: Data & Math -->
+            <div class="skill-card">
+                <h3>📊 Data &amp; Math</h3>
+                <ul>
+                    <li>Statistics &amp; Probability</li>
+                    <li>Permutation &amp; Combination</li>
+                    <li>LP Simplex Method</li>
+                    <li>Break-even Analysis</li>
+                </ul>
+            </div>
+            
+            <!-- Card 4: Design & Tools -->
+            <div class="skill-card">
+                <h3>🎨 Design &amp; Tools</h3>
+                <ul>
+                    <li>Figma (UI/UX)</li>
+                    <li>MySQL / XAMPP</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Excel Solver</li>
+                </ul>
+            </div>
+        </div>
+
+                <!-- ===== GITHUB SKILLS SECTION (DYNAMIC) ===== -->
+        <div class="github-skills-wrapper">
+            <h3> My Coding Languages (Live from GitHub)</h3>
+            <div id="githubSkillBars" class="skill-bars-container">
+                <!-- Bars will be injected here by JavaScript -->
+            </div>
+            <p id="githubSkillSummary" class="github-summary">
+                Loading your GitHub language stats...
             </p>
-            <div class="buttons">
-                <a href="projects.html">View Projects</a>
-                <a href="https://github.com/suman222222" target="_blank" rel="noopener">View GitHub</a>
-            </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Core Skill Areas</h2>
-
-        <div class="github-skill-card" style="margin-top:32px;">
-            <div class="skill-header">
-                <div>
-                    <span>Tracked from GitHub</span>
-                    <h3>Current Focus</h3>
-                </div>
-                <a href="https://github.com/suman222222" target="_blank" rel="noopener">View GitHub</a>
-            </div>
-
-            <p class="skill-summary">
-                I’m continuing to strengthen my skills in web development, project structure, and practical implementation.
-            </p>
-
-            <div class="skill-bars">
-                <div class="skill-row">
-                    <div class="skill-info">
-                        <span>HTML</span>
-                        <strong>90%</strong>
-                    </div>
-                    <div class="skill-track"><span style="width:90%"></span></div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-info">
-                        <span>CSS</span>
-                        <strong>85%</strong>
-                    </div>
-                    <div class="skill-track"><span style="width:85%"></span></div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-info">
-                        <span>JavaScript</span>w
-                        <strong>70%</strong>
-                    </div>
-                    <div class="skill-track"><span style="width:70%"></span></div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-info">
-                        <span>Git & GitHub</span>
-                        <strong>80%</strong>
-                    </div>
-                    <div class="skill-track"><span style="width:80%"></span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Let’s Connect</h2>
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <h3>Open to learning and collaboration</h3>
-                <p>I’m always interested in improving my skills and contributing to meaningful projects.</p>
-                <div class="contact-list">
-                    <a href="mailto:kaprisuman222@gmail.com">
-                        <span>Email</span>
-                        <strong>kaprisuman222@gmail.com</strong>
-                    </a>
-                    <a href="https://github.com/suman222222" target="_blank" rel="noopener">
-                        <span>GitHub</span>
-                        <strong>github.com/suman222222</strong>
-                    </a>
-                </div>
-            </div>
-
-            <form class="contact-form" action="mailto:kaprisuman222@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="subject" placeholder="Subject" required>
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>© 2026 Suman Kapri. All Rights Reserved.</p>
+        <p>&copy; 2026 Suman Kapri. Built with ☕ and patience.</p>
     </footer>
 
     <script src="script.js"></script>
