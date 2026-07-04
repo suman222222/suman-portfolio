@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suman Kapri | IT Student</title>
+    <title>Suman Kapri | IT Professional</title>
+    
+    <!-- Premium Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- ===== NAVIGATION (Manually Rewritten) ===== -->
+    <!-- ===== NAVIGATION (Glassmorphism) ===== -->
     <header>
         <nav>
-            <div class="logo">Suman Kapri</div>
+            <div class="logo">✦ Suman Kapri</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
@@ -20,27 +24,44 @@
         </nav>
     </header>
 
-    <!-- ===== HERO SECTION (Premium Glassmorphism) ===== -->
+    <!-- ===== HERO SECTION (Animated Background + Typing) ===== -->
     <section class="hero">
+        <!-- Floating gradient blobs (CSS art) -->
+        <div class="floating-blob blob-1"></div>
+        <div class="floating-blob blob-2"></div>
+        
         <div class="hero-content">
+            <!-- Profile Picture -->
             <img src="images/suman-profile.jpg" alt="Suman Kapri" />
-            <h1>Hi, I'm <span>Suman Kapri</span></h1>
-            <p class="subtitle">BSc Computing Student @ Islington College (London Met, UK)</p>
             
+            <!-- Name with Gradient -->
+            <h1>Hi, I'm <span>Suman Kapri</span></h1>
+            
+            <p class="subtitle">BSc Computing @ Islington College (London Met, UK)</p>
+            
+            <!-- Typing Animation (Starts with "Networks" visible) -->
+            <div class="typing-wrapper">
+                <span class="static-text">I build </span>
+                <span class="dynamic-text">Networks</span>
+            </div>
+            
+            <!-- Tech Tags -->
             <div class="tech-tags">
                 <span>Java</span>
                 <span>Python</span>
                 <span>Networking</span>
-                <span>UI/UX Design</span>
+                <span>UI/UX</span>
+                <span>MySQL</span>
             </div>
             
-            <a href="projects.html" class="btn">View My Work</a>
+            <!-- Glowing CTA Button -->
+            <a href="projects.html" class="btn-glow">View My Work →</a>
         </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <p>&copy; 2026 Suman Kapri. Built with ☕ and patience.</p>
+        <p>© 2026 Suman Kapri. Built with ❤️, logic gates & zero shortcuts.</p>
     </footer>
 
     <script src="script.js"></script>
