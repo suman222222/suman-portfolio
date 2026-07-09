@@ -171,7 +171,6 @@ nav {
     object-fit: cover;
     border: 3px solid transparent;
     background: linear-gradient(135deg, #8b5cf6, #d946ef) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     padding: 4px;
@@ -193,7 +192,6 @@ nav {
 
 .hero h1 span {
     background: linear-gradient(135deg, #a78bfa, #ec4899);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -533,4 +531,62 @@ footer {
     .github-skills-wrapper {
         padding: 20px;
     }
+}
+
+
+.expertise-section {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+.expertise-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.expertise-container h2 {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+.expertise-intro {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.7;
+}
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+.expertise-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: #f5576c;
+}
+.expertise-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.expertise-card h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.expertise-card p {
+    color: #b0b0b0;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
