@@ -171,7 +171,6 @@ nav {
     object-fit: cover;
     border: 3px solid transparent;
     background: linear-gradient(135deg, #8b5cf6, #d946ef) border-box;
-    -webkit-mask-composite: xor;
     mask-composite: exclude;
     padding: 4px;
     margin-bottom: 20px;
