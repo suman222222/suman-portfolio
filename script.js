@@ -1,11 +1,6 @@
-// ============================================================
-//  CONFIGURATION — CHANGE TO YOUR REAL GITHUB USERNAME
-// ============================================================
+
 const githubUsername = "suman222222"; 
 
-// ============================================================
-//  TYPING ANIMATION (100% Fixed - No More Freezing)
-// ============================================================
 const words = ['Networks', 'Code', 'Solutions', 'Interfaces'];
 let wordIndex = 0;
 let charIndex = 0;
@@ -17,7 +12,7 @@ function typeEffect() {
 
     const currentWord = words[wordIndex];
     
-    // ---- TYPE OR DELETE ----
+    
     if (isDeleting) {
         // Remove one character
         dynamicText.textContent = currentWord.substring(0, charIndex - 1);
@@ -28,13 +23,13 @@ function typeEffect() {
         charIndex++;
     }
 
-    // ---- FORCE GRADIENT REPAINT (Fixes the color bug) ----
+    
     dynamicText.style.transform = 'scale(0.999)';
     requestAnimationFrame(() => {
         dynamicText.style.transform = 'scale(1)';
     });
 
-    // ---- CHECK STATES ----
+    
     // If we just finished typing the whole word
     if (!isDeleting && charIndex === currentWord.length) {
         isDeleting = true;
@@ -83,9 +78,6 @@ const colors = {
     R: "#198CE7"
 };
 
-// ============================================================
-//  FETCH & RENDER GITHUB SKILLS
-// ============================================================
 async function fetchGithubSkills() {
     const skillBars = document.getElementById("githubSkillBars");
     const skillSummary = document.getElementById("githubSkillSummary");
