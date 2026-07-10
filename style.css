@@ -1,6 +1,4 @@
-/* ============================================================
-   RESET & BASE
-   ============================================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -588,4 +586,202 @@ footer {
     color: #b0b0b0;
     line-height: 1.6;
     font-size: 0.95rem;
+}
+
+/* ============================================
+   CSS POLISH - Nav, Footer, Hovers, Responsive
+   ============================================ */
+
+/* ----- 1. SOCIAL ICONS IN NAVIGATION ----- */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Style specifically for social icon links (font awesome) */
+.nav-links li a i {
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    width: 40px;
+    text-align: center;
+}
+
+.nav-links li a i:hover {
+    background: #f5576c;
+    color: #fff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
+}
+
+/* ----- 2. NAV LINK UNDERLINE ANIMATION ----- */
+.nav-links li a:not(:has(i)) {
+    position: relative;
+}
+
+.nav-links li a:not(:has(i))::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #f093fb, #f5576c);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:not(:has(i)):hover::after {
+    width: 100%;
+}
+
+/* ----- 3. FOOTER UPGRADE ----- */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 20px;
+}
+
+footer p {
+    color: #888;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+footer p:hover {
+    color: #f5576c;
+}
+
+footer .footer-social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-social a {
+    color: #666;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+footer .footer-social a:hover {
+    color: #f5576c;
+    transform: translateY(-3px);
+}
+
+/* ----- 4. SMOOTH SCROLLING (Whole Page) ----- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----- 5. RESPONSIVE DESIGN (Mobile Fixes) ----- */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .nav-links li a i {
+        font-size: 1.1rem;
+        padding: 6px 8px;
+        width: 35px;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-content .subtitle {
+        font-size: 1rem !important;
+    }
+    
+    .tech-tags {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .tech-tags span {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+
+    /* Expertise Grid */
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .expertise-container h2 {
+        font-size: 2rem !important;
+    }
+    
+    .expertise-intro {
+        font-size: 1rem !important;
+        padding: 0 10px;
+    }
+
+    /* Buttons */
+    .btn-glow {
+        padding: 12px 30px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ----- 6. EXTRA POLISH: GLOW EFFECT ON CARDS ----- */
+.expertise-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.expertise-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(245, 87, 108, 0.05), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.expertise-card:hover::before {
+    opacity: 1;
+}
+
+/* ----- 7. PROFILE IMAGE ENHANCEMENT ----- */
+.hero-content img {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(245, 87, 108, 0.2);
+    transition: all 0.5s ease;
+}
+
+.hero-content img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 60px rgba(245, 87, 108, 0.4);
+    border-color: #f5576c;
 }
