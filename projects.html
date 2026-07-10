@@ -3,68 +3,138 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Suman Kapri</title>
+    <title>Suman Kapri | Projects</title>
+    
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- ===== NAVIGATION ===== -->
+    <!-- ===== NAVIGATION (Same as Home) ===== -->
     <header>
         <nav>
-            <div class="logo">✦ Suman Kapri</div>
+            <div class="logo">Suman Kapri</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li>
+                    <a href="https://github.com/suman222222" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- ===== PROJECTS SECTION ===== -->
+    <!-- ===== PROJECTS HERO (Smaller Banner) ===== -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>My <span>Projects</span></h1>
+            <p>Practical solutions built with networks, code, and creativity.</p>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS GRID ===== -->
     <section class="projects-section">
-        <h2>My Projects</h2>
-        <p class="projects-intro">Here are some projects I've built or am currently working on:</p>
-        
-        <div class="projects-grid">
-            <!-- Project 1 -->
+        <div class="projects-container">
+
+            <!-- Project 1: Networking -->
             <div class="project-card">
-                <h3>📡 Network Subnet Calculator</h3>
-                <p>A tool built with JavaScript that calculates subnet masks, network addresses, and host ranges.</p>
-                <div>
-                    <span class="project-tag">Networking</span>
-                    <span class="project-tag">JS</span>
+                <div class="project-icon">🌐</div>
+                <h3>Network Infrastructure Simulation</h3>
+                <p>
+                    Designed and simulated a multi-department enterprise network using Cisco Packet Tracer. 
+                    Configured routing protocols (RIP, OSPF), VLANs, and inter-VLAN routing to ensure secure 
+                    and efficient data flow.
+                </p>
+                <div class="project-tags">
+                    <span>Cisco</span>
+                    <span>Routing</span>
+                    <span>VLAN</span>
                 </div>
-                <a href="#" class="project-link">View Details →</a>
+                <div class="project-links">
+                    <a href="#" class="btn-glow small-btn">View Case Study</a>
+                    <a href="#" class="btn-ghost"><i class="fab fa-github"></i> Code</a>
+                </div>
             </div>
-            
-            <!-- Project 2 -->
+
+            <!-- Project 2: Full-Stack App -->
             <div class="project-card">
-                <h3>☕ Java Library Management System</h3>
-                <p>A console-based app using Java and MySQL (XAMPP) to manage book borrowing and returns.</p>
-                <div>
-                    <span class="project-tag">Java</span>
-                    <span class="project-tag">MySQL</span>
+                <div class="project-icon">💻</div>
+                <h3>Student Management System</h3>
+                <p>
+                    Built a full-stack CRUD application using Java (Spring Boot) for backend logic and MySQL for 
+                    persistent data storage. Designed a clean frontend interface to manage student records 
+                    efficiently.
+                </p>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>MySQL</span>
+                    <span>Spring</span>
                 </div>
-                <a href="#" class="project-link">View Details →</a>
+                <div class="project-links">
+                    <a href="#" class="btn-glow small-btn">Live Demo</a>
+                    <a href="#" class="btn-ghost"><i class="fab fa-github"></i> Code</a>
+                </div>
             </div>
-            
-            <!-- Project 3 -->
+
+            <!-- Project 3: This Portfolio -->
             <div class="project-card">
-                <h3>🎨 Personal Portfolio (This site!)</h3>
-                <p>Built from scratch with HTML, CSS, and Git. Designed in Figma first, then hand-coded.</p>
-                <div>
-                    <span class="project-tag">HTML/CSS</span>
-                    <span class="project-tag">Figma</span>
+                <div class="project-icon">⚡</div>
+                <h3>Personal Developer Portfolio</h3>
+                <p>
+                    Built this responsive portfolio from scratch using HTML5, CSS3, and JavaScript. 
+                    Implemented Git branching strategies for feature development and deployed it live 
+                    to showcase my work to potential employers.
+                </p>
+                <div class="project-tags">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>Git</span>
                 </div>
-                <a href="#" class="project-link">View Details →</a>
+                <div class="project-links">
+                    <a href="#" class="btn-glow small-btn">Visit Site</a>
+                    <a href="https://github.com/suman222222/suman-portfolio" class="btn-ghost"><i class="fab fa-github"></i> Code</a>
+                </div>
             </div>
+
+            <!-- Project 4: Python Automation -->
+            <div class="project-card">
+                <div class="project-icon">🐍</div>
+                <h3>Automated File Organizer</h3>
+                <p>
+                    Developed a Python script that automatically scans a directory and organizes files into 
+                    categorized folders based on file type (images, documents, audio, etc.). Reduces manual 
+                    desktop clutter with a single command.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Automation</span>
+                    <span>CLI</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn-glow small-btn">Try Demo</a>
+                    <a href="#" class="btn-ghost"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <p>© 2026 Suman Kapri. Built with ☕, logic gates & zero shortcuts.</p>
+        <p>© 2026 Suman Kapri</p>
+        <div class="footer-social">
+            <a href="https://github.com/suman222222" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
