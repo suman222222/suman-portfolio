@@ -20,13 +20,13 @@ html {
 }
 
 /* ============================================
-   NAVIGATION (Glassmorphism)
+   NAVIGATION - SOLID DARK FIX
    ============================================ */
 header {
     padding: 20px 40px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(10, 10, 15, 0.95) !important; 
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -40,11 +40,11 @@ nav {
     margin: 0 auto;
 }
 
+/* LOGO - NOW SOLID BRIGHT PINK (No gradient) */
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #f093fb, #f5576c);
-    -webkit-text-fill-color: transparent;
+    color: #f5576c; /* Solid, visible, cross-browser safe */
 }
 
 .nav-links {
@@ -74,7 +74,7 @@ nav {
     left: 0;
     width: 0%;
     height: 2px;
-    background: linear-gradient(90deg, #f093fb, #f5576c);
+    background: #f5576c;
     transition: width 0.3s ease;
 }
 
@@ -82,10 +82,11 @@ nav {
     width: 100%;
 }
 
-/* Social Icons in Nav */
+/* SOCIAL ICONS - BRIGHT WHITE AND VISIBLE */
 .nav-links li a i {
+    color: #ffffff !important; 
     font-size: 1.3rem;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.1); 
     padding: 8px 10px;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -94,11 +95,13 @@ nav {
 }
 
 .nav-links li a i:hover {
-    background: #f5576c;
+    background: #f5576c !important;
     color: #fff !important;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.4);
+    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.5);
 }
+
+
 
 /* ============================================
    HERO SECTION
@@ -175,9 +178,10 @@ nav {
 }
 
 .hero-content h1 span {
-    background: linear-gradient(135deg, #f093fb, #f5576c);
-    -webkit-text-fill-color: transparent;
+    color: #f5576c; /* Solid pink instead of gradient */
 }
+
+
 
 .subtitle {
     font-size: 1.2rem;
@@ -273,10 +277,11 @@ nav {
 
 .expertise-container h2 {
     font-size: 2.8rem;
-    background: linear-gradient(135deg, #f093fb, #f5576c);
-    -webkit-text-fill-color: transparent;
+    color: #f5576c; /* Solid pink */
     margin-bottom: 15px;
 }
+
+
 
 .expertise-intro {
     font-size: 1.2rem;
@@ -358,8 +363,7 @@ nav {
 }
 
 .page-hero-content h1 span {
-    background: linear-gradient(135deg, #f093fb, #f5576c);
-    -webkit-text-fill-color: transparent;
+    color: #f5576c; /* Solid pink */
 }
 
 .page-hero-content p {
