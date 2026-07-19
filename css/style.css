@@ -419,6 +419,32 @@ nav {
     margin-bottom: 20px;
 }
 
+.project-card{
+    background:#111118;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:30px;
+    transition:.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    border-color:#F5576C;
+    box-shadow:0 15px 35px rgba(245,87,108,.18);
+}
+
+.project-card h3{
+    color:#fff;
+    font-size:1.8rem;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:#bdbdbd;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -902,16 +928,29 @@ footer {
 }
 
 .certificate-buttons a:first-child {
-    background: #2563eb;
+    background: #F5576C;
     color: white;
 }
 
+
+
 .certificate-buttons a:last-child {
-    border: 2px solid #2563eb;
-    color: #2563eb;
+    border: 2px solid #F5576C;
+    color: #F5576C;
 }
+
+
 
 .certificate-buttons a:hover {
     opacity: .9;
     transform: translateY(-2px);
 }
+
+.certificate-card h2,
+.certificate-card h4,
+.certificate-card p,
+.skills span {
+    color: #1f2937;
+}
+
+
