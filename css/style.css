@@ -633,6 +633,34 @@ footer p:hover {
         justify-content: center;
     }
 
+    .project-links{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.project-links a{
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-links a:first-child{
+    background:#F5576C;
+    color:white;
+}
+
+.project-links a:last-child{
+    border:2px solid #F5576C;
+    color:#F5576C;
+}
+
+.project-links a:hover{
+    transform:translateY(-3px);
+}
+
     /* Buttons */
     .btn-glow {
         padding: 12px 30px !important;
