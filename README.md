@@ -43,27 +43,9 @@ I am continuously learning and building new projects.
 
 Coming Soon
 
-## Installation
 
-1. Clone the repository
 
-```bash
-git clone https://github.com/suman222222/my-portfolio.git
-```
 
-2. Open the project folder
-
-```bash
-cd my-Portfolio
-```
-
-3. Open `index.html` in your browser
-
-## Contact
-
-GitHub:https://github.com/suman222222
-
-LinkedIn: 
 
 Email: [kaprisuman222@gmail.com](mailto:kaprisuman222@gmail.com)
 
