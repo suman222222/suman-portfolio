@@ -470,6 +470,22 @@ nav {
     margin-top: 5px;
 }
 
+.tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.tech-stack span{
+    background:rgba(245,87,108,.15);
+    color:#F5576C;
+    padding:8px 16px;
+    border-radius:50px;
+    font-size:.9rem;
+    font-weight:500;
+}
+
 .small-btn {
     padding: 10px 22px !important;
     font-size: 0.8rem !important;

@@ -1,6 +1,4 @@
-// ============================================================
-//  CONFIGURATION
-// ============================================================
+
 const githubUsername = "suman222222";
 
 // Words for typing animation
@@ -221,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchGithubSkills();
     }
 
-    // 3. Project Links (fix any broken GitHub links)
+    // 3. Project Links 
     setupProjectLinks();
 
     // 4. Professional Console Greeting
