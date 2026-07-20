@@ -1,93 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | Suman Kapri</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- ===== NAVIGATION ===== -->
-    <header>
-        <nav>
-            <div class="logo">✦ Suman Kapri</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="logo">Suman Kapri</div>
 
-    <!-- ===== SKILLS SECTION ===== -->
-    <section class="skills-section">
-        <h2>My Tech Toolbox</h2>
-        <p class="skills-intro">What I learned in Year 1 and what I'm sharpening this summer:</p>
-        
-        <div class="skills-grid">
-            <!-- Card 1: Programming -->
-            <div class="skill-card">
-                <h3>💻 Programming</h3>
-                <ul>
-                    <li>Java (BlueJ)</li>
-                    <li>Python (IDLE)</li>
-                    <li>HTML5 &amp; CSS3</li>
-                    <li>JavaScript (Basic)</li>
-                </ul>
-            </div>
-            
-            <!-- Card 2: Networking -->
-            <div class="skill-card">
-                <h3>🌐 Networking</h3>
-                <ul>
-                    <li>Cisco Packet Tracer</li>
-                    <li>TCP/IP &amp; DHCP</li>
-                    <li>Subnetting</li>
-                </ul>
-            </div>
-            
-            <!-- Card 3: Data & Math -->
-            <div class="skill-card">
-                <h3>📊 Data &amp; Math</h3>
-                <ul>
-                    <li>Statistics &amp; Probability</li>
-                    <li>Permutation &amp; Combination</li>
-                    <li>LP Simplex Method</li>
-                    <li>Break-even Analysis</li>
-                </ul>
-            </div>
-            
-            <!-- Card 4: Design & Tools -->
-            <div class="skill-card">
-                <h3>🎨 Design &amp; Tools</h3>
-                <ul>
-                    <li>Figma (UI/UX)</li>
-                    <li>MySQL / XAMPP</li>
-                    <li>Git &amp; GitHub</li>
-                    <li>Excel Solver</li>
-                </ul>
-            </div>
-        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <!-- ===== LIVE GITHUB SKILL BARS ===== -->
-        <div class="github-skills-wrapper">
-            <h3>📈 Live Coding Languages (from GitHub)</h3>
-            <div id="githubSkillBars" class="skill-bars-container">
-                <!-- JavaScript injects bars here -->
-            </div>
-            <p id="githubSkillSummary" class="github-summary">
-                Loading your GitHub language stats...
-            </p>
-        </div>
-    </section>
+<!-- Hero -->
 
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>© 2026 Suman Kapri. Built with ☕, logic gates & zero shortcuts.</p>
-    </footer>
+<section class="page-hero">
+    <div class="page-hero-content">
+        <h1>Technical <span>Skills</span></h1>
+        <p>Technologies, tools, and frameworks I use to build software and solve real-world problems.</p>
+    </div>
+</section>
 
-    <script src="js/script.js"></script>
+<!-- Skills -->
+
+<section class="skills-section">
+
+<div class="skill-card">
+<h3><i class="fas fa-code"></i> Programming Languages</h3>
+
+<h3><i class="fas fa-globe"></i> Web Development</h3>
+
+<h3><i class="fas fa-robot"></i> AI & RAG</h3>
+
+<h3><i class="fas fa-database"></i> Database</h3>
+
+<h3><i class="fas fa-network-wired"></i> Networking</h3>
+
+<h3><i class="fas fa-tools"></i> Tools</h3>
+
+
+</div>
+
+<div class="skill-card">
+<h3>🤖 AI & Document Intelligence</h3>
+
+<ul>
+<li>Retrieval-Augmented Generation (RAG)</li>
+<li>Groq API</li>
+<li>Sentence Transformers</li>
+<li>ChromaDB</li>
+<li>PDF Processing</li>
+<li>Prompt Engineering</li>
+</ul>
+
+</div>
+
+<div class="skill-card">
+<h3>🗄 Database</h3>
+
+<ul>
+<li>MySQL</li>
+<li>ChromaDB</li>
+<li>File Handling</li>
+<li>Data Management</li>
+</ul>
+
+</div>
+
+<div class="skill-card">
+<h3>🌍 Networking</h3>
+
+<ul>
+<li>Cisco Packet Tracer</li>
+<li>TCP/IP</li>
+<li>Routing & Switching</li>
+<li>Subnetting</li>
+<li>CCNA Fundamentals</li>
+</ul>
+
+</div>
+
+<div class="skill-card">
+<h3>🛠 Development Tools</h3>
+
+<ul>
+<li>VS Code</li>
+<li>BlueJ</li>
+<li>XAMPP</li>
+<li>Git</li>
+<li>GitHub</li>
+<li>Figma</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- GitHub -->
+
+<div class="github-skills-wrapper">
+
+<h2>GitHub Language Statistics</h2>
+
+<div id="githubSkillBars" class="skill-bars-container"></div>
+
+<p id="githubSkillSummary">
+Loading language statistics...
+</p>
+
+</div>
+
+<!-- Current Focus -->
+
+<div class="github-skills-wrapper">
+
+<h2>Current Learning Focus</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>🚀 Currently Building</h3>
+
+<ul>
+<li>AI Applications</li>
+<li>Full Stack Development</li>
+<li>Software Engineering</li>
+<li>Networking</li>
+<li>Open Source Projects</li>
+</ul>
+
+</div>
+
+<div class="skill-card">
+<h3>🎯 Career Goal</h3>
+
+<p>
+To become a Software Engineer specializing in AI-powered applications,
+web technologies, and scalable software systems while contributing to
+real-world projects.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Suman Kapri • Continuous Learning • Continuous Building</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
