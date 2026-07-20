@@ -1,115 +1,259 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suman Kapri | IT Professional</title>
-    
-    <!-- Premium Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    
-</head>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+         <title>Suman Kapri | IT Professional</title> 
+         <!-- Premium Google Font --> 
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+           <link rel="stylesheet" href="css/style.css" /> 
+        </head>
+
 <body>
 
-    
-    <header>
-        <nav>
-            <div class="logo">Suman Kapri</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="logo">Suman Kapri</div>
 
-    
-    <section class="hero">
-        <!-- Floating gradient blobs (CSS art) -->
-        <div class="floating-blob blob-1"></div>
-        <div class="floating-blob blob-2"></div>
-        
-        <div class="hero-content">
-            <!-- Profile Picture -->
-            <img src="assets/suman-profile.jpg" alt="Suman Kapri" />
-            
-            <!-- Name with Gradient -->
-            <h1>Hi, I'm <span>Suman Kapri</span></h1>
-            <p class="subtitle">Code. Network. Innovate.</p>
-            
-            
-            
-            <!-- Typing Animation -->
-            <div class="typing-wrapper">
-                <span class="static-text">I build </span>
-                <span class="dynamic-text">Networks</span>
-            </div>
-            
-            <!-- Tech Tags -->
-            <div class="tech-tags">
-                <span>Java</span>
-                <span>Python</span>
-                <span>Networking</span>
-                <span>UI/UX</span>
-                <span>MySQL</span>
-            </div>
-            
-            <!-- Glowing CTA Button -->
-            <a href="projects.html" class="btn-glow">View My Work →</a>
-        </div>
-    </section>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- ===== GITHUB SKILLS SECTION ===== -->
-<section class="expertise-section" id="github-skills">
-    <div class="expertise-container">
-        <h2>GitHub <span>Tech Stack</span></h2>
-        <p class="expertise-intro" id="githubSkillSummary">
-            📊 Loading languages from my public repositories...
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="floating-blob blob-1"></div>
+    <div class="floating-blob blob-2"></div>
+
+    <div class="hero-content">
+
+        <img src="assets/suman-profile.jpg" alt="Suman Kapri">
+
+        <h1>
+            Hi, I'm <span>Suman Kapri</span>
+        </h1>
+
+        <p class="subtitle">
+            Computing Student • Software Developer • AI Builder
         </p>
-        <div id="githubSkillBars" class="github-bars-container"></div>
+
+        <div class="typing-wrapper">
+            <span class="static-text">I build </span>
+            <span class="dynamic-text">AI Applications</span>
+        </div>
+
+        <div class="tech-tags">
+            <span>Java</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>Networking</span>
+            <span>AI</span>
+            <span>MySQL</span>
+        </div>
+
+        <a href="projects.html" class="btn-glow">
+            Explore My Projects →
+        </a>
+
     </div>
+
 </section>
 
-        <!-- ===== EXPERTISE SECTION (Authentic Skills) ===== -->
-    <section class="expertise-section">
-        <div class="expertise-container">
-            <h2>My Expertise</h2>
-            <p class="expertise-intro">
-                I design practical network infrastructures and build full-stack web applications. 
-                I focus on making complex technology work reliably and look great.
-            </p>
-            
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="icon">🌐</div>
-                    <h3>Network Engineering</h3>
-                    <p>Simulating and configuring network infrastructures using Cisco Packet Tracer. Focused on routing, switching, and applying CCNA-level principles to real-world scenarios.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="icon">💻</div>
-                    <h3>Full-Stack Development</h3>
-                    <p>Building web applications with Java and Python for backend logic, MySQL for database management, and clean UI/UX for the frontend. Every project is version-controlled using Git.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="icon">⚡</div>
-                    <h3>Practical Problem Solving</h3>
-                    <p>Bridging the gap between network architecture and software development. I enjoy debugging complex systems and creating seamless digital experiences from the ground up.</p>
-                </div>
-            </div>
+<!-- GitHub Skills -->
 
-            <a href="projects.html" class="btn-glow" style="margin-top: 40px; display: inline-block;">
-                View My Projects →
-            </a>
-        </div>
-    </section>
+<section class="expertise-section">
 
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>© 2026 Suman Kapri</p>
-    </footer>
+<div class="expertise-container">
 
-   <script src="js/script.js"></script>
+<h2>GitHub <span>Tech Stack</span></h2>
+
+<p id="githubSkillSummary">
+Loading languages from GitHub...
+</p>
+
+<div id="githubSkillBars"></div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="expertise-section">
+
+<div class="expertise-container">
+
+<h2>About Me</h2>
+
+<p class="expertise-intro">
+
+I'm a BSc Computing student passionate about software engineering, AI-powered applications, networking, and solving real-world problems through technology. I enjoy learning by building practical projects and continuously improving my development skills.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- FEATURED PROJECTS -->
+
+<section class="expertise-section">
+
+<div class="expertise-container">
+
+<h2>Featured <span>Projects</span></h2>
+
+<div class="expertise-grid">
+
+<div class="expertise-card">
+
+<div class="icon">🤖</div>
+
+<h3>ResumePilot</h3>
+
+<p>AI-assisted resume builder developed using Flask and Python with responsive web design.</p>
+
+<a href="projects.html">View Project →</a>
+
+</div>
+
+<div class="expertise-card">
+
+<div class="icon">📄</div>
+
+<h3>DocuMine</h3>
+
+<p>AI-powered PDF document analyst using RAG, ChromaDB and Groq Llama with source citations.</p>
+
+<a href="projects.html">View Project →</a>
+
+</div>
+
+<div class="expertise-card">
+
+<div class="icon">🌐</div>
+
+<h3>Developer Portfolio</h3>
+
+<p>Personal portfolio showcasing projects, GitHub activity, certifications and technical skills.</p>
+
+<a href="projects.html">View Project →</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERTISE -->
+
+<section class="expertise-section">
+
+<div class="expertise-container">
+
+<h2>My Expertise</h2>
+
+<div class="expertise-grid">
+
+<div class="expertise-card">
+
+<div class="icon">💻</div>
+
+<h3>Software Development</h3>
+
+<p>Building responsive web applications using Java, Python, HTML, CSS, JavaScript and MySQL.</p>
+
+</div>
+
+<div class="expertise-card">
+
+<div class="icon">🤖</div>
+
+<h3>Artificial Intelligence</h3>
+
+<p>Developing Retrieval-Augmented Generation (RAG) applications with embeddings, vector databases and modern LLM APIs.</p>
+
+</div>
+
+<div class="expertise-card">
+
+<div class="icon">🌐</div>
+
+<h3>Networking</h3>
+
+<p>Designing and configuring networks using Cisco Packet Tracer while learning CCNA concepts.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section class="expertise-section">
+
+<div class="expertise-container">
+
+<h2>Latest <span>Certifications</span></h2>
+
+<p class="expertise-intro">
+
+Continuously improving my knowledge through industry-recognized certifications in cybersecurity, networking and software development.
+
+</p>
+
+<a href="certifications.html" class="btn-glow">
+
+View Certifications →
+
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT CTA -->
+
+<section class="expertise-section">
+
+<div class="expertise-container">
+
+<h2>Let's Build Something Great</h2>
+
+<p class="expertise-intro">
+
+I'm always interested in collaborating on innovative software, AI and web development projects.
+
+</p>
+
+<a href="https://github.com/suman222222"
+target="_blank"
+class="btn-glow">
+
+Visit My GitHub →
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Suman Kapri • Built with HTML, CSS & JavaScript</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
-</html>

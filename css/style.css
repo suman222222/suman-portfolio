@@ -103,6 +103,23 @@ nav {
 /* ============================================================
    HERO
    ============================================================ */
+
+   .hero-content img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 5px solid #F5576C;
+    box-shadow: 0 15px 35px rgba(245, 87, 108, 0.35);
+    margin-bottom: 25px;
+    transition: transform 0.4s ease;
+}
+
+.hero-content img:hover {
+    transform: scale(1.05);
+}
+
 .hero {
     min-height: 88vh;
     display: flex;
