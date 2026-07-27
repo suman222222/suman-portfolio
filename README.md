@@ -1,21 +1,18 @@
 # Suman Kapri Portfolio
 
-Welcome to my personal portfolio website.
+Personal portfolio website for my software development, AI, web, networking, and certification work.
 
 ## About
 
-I am Suman Kapri, a B.Sc. Computing student passionate about software development, web technologies, and building practical projects.
-
-This portfolio showcases my skills, projects, and learning journey in technology.
+I am Suman Kapri, a BSc Computing student passionate about software engineering, AI-powered applications, web technologies, and solving practical problems through technology.
 
 ## Features
 
-* Responsive Design
-* Modern User Interface
-* About Me Section
-* Skills Showcase
-* Project Gallery
-* Contact Information
+* Responsive multi-page portfolio
+* Project showcase with live demos and GitHub links
+* GitHub language statistics powered by the GitHub API
+* Certifications with view and download links
+* Contact page with email, LinkedIn, GitHub, and location details
 
 ## Technologies Used
 
@@ -27,30 +24,34 @@ This portfolio showcases my skills, projects, and learning journey in technology
 
 ## Projects
 
-### Expense Tracker
+### Personal Developer Portfolio
 
-A web application for tracking expenses and managing personal finances.
+Responsive portfolio built from scratch with HTML, CSS, JavaScript, and live GitHub language statistics.
 
 ### ResumePilot
 
-A resume builder that helps users create professional resumes quickly.
+Flask-based resume builder with a clean form flow, preview experience, and responsive design.
 
-### More Projects Coming Soon
+### DocuMine
 
-I am continuously learning and building new projects.
+AI-powered PDF document analyst using RAG, ChromaDB, Sentence Transformers, Groq API, and source-backed answers.
+
+### TarkariGhar
+
+Responsive vegetable and grocery shopping website with product showcases, categories, and mobile-friendly layout.
 
 ## Live Demo
 
-Coming Soon
+Open `index.html` in a browser or deploy the site with GitHub Pages.
 
+## Contact
 
-
-
-
-Email: [kaprisuman222@gmail.com](mailto:kaprisuman222@gmail.com)
+Email: [kaprisuman222@gmail.com](mailto:kaprisuman222@gmail.com)  
+GitHub: [suman222222](https://github.com/suman222222)  
+LinkedIn: [suman-kapri](https://www.linkedin.com/in/suman-kapri/)
 
 ## Author
 
 Suman Kapri
 
-B.Sc. Computing Student | Aspiring Software Developer
+BSc Computing Student | Software Developer | AI Builder
