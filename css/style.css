@@ -7,17 +7,49 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg: #071013;
+    --surface: #0d1b1e;
+    --surface-strong: #10242a;
+    --text: #f5fbf8;
+    --muted: #a7bbb6;
+    --border: rgba(255, 255, 255, 0.09);
+    --accent: #14b8a6;
+    --accent-2: #f59e0b;
+    --accent-soft: rgba(20, 184, 166, 0.16);
+    --shadow: rgba(0, 0, 0, 0.34);
+    --hero-glow: rgba(20, 184, 166, 0.28);
+}
+
+body.light-theme {
+    --bg: #f7faf7;
+    --surface: #ffffff;
+    --surface-strong: #edf7f4;
+    --text: #10201f;
+    --muted: #52635f;
+    --border: rgba(15, 36, 34, 0.12);
+    --accent: #0f766e;
+    --accent-2: #d97706;
+    --accent-soft: rgba(15, 118, 110, 0.12);
+    --shadow: rgba(15, 36, 34, 0.13);
+    --hero-glow: rgba(15, 118, 110, 0.16);
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0a0a0f;
-    color: #fff;
+    background:
+        radial-gradient(circle at top right, var(--accent-soft), transparent 32rem),
+        radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.12), transparent 28rem),
+        var(--bg);
+    color: var(--text);
     min-height: 100vh;
     overflow-x: hidden;
     line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ============================================================
@@ -817,6 +849,180 @@ nav {
 .contact-form button:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(245, 87, 108, 0.28);
+}
+
+/* ============================================================
+   THEME POLISH
+   ============================================================ */
+header {
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    border-bottom-color: var(--border);
+}
+
+.logo,
+.hero-content h1 .highlight,
+.hero-content h1 span,
+.typing-wrapper .dynamic-text,
+.project-category,
+.certifications-header h1 span,
+.certificate-card .skills span:hover,
+.info-card i,
+footer p:hover,
+.footer-social a:hover {
+    color: var(--accent);
+}
+
+.nav-links li a {
+    color: var(--muted);
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: var(--text);
+}
+
+.nav-links li a::after,
+.nav-links li a i:hover,
+.project-tech span:hover,
+.btn-project,
+.certificate-buttons a:first-child,
+.certificate-buttons a:last-child:hover,
+.focus-tags span:hover {
+    background: var(--accent);
+}
+
+.hero-content img,
+.hero-content .avatar:hover,
+.tech-tags span:hover,
+.expertise-card:hover,
+.certificate-card:hover,
+.btn-project.demo,
+.certificate-buttons a:last-child,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent);
+}
+
+.typing-wrapper .dynamic-text {
+    border-right-color: var(--accent);
+}
+
+.blob-1 {
+    background: var(--accent);
+}
+
+.blob-2 {
+    background: var(--accent-2);
+}
+
+.btn-glow,
+.expertise-container h2,
+.skill-card::before,
+.contact-header h1,
+.contact-form button {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+
+.hero-content img {
+    box-shadow: 0 15px 35px var(--hero-glow);
+}
+
+.expertise-section {
+    background: color-mix(in srgb, var(--surface) 58%, transparent);
+    border-color: var(--border);
+}
+
+.expertise-card,
+.skill-card,
+.github-skills-wrapper,
+.info-card,
+.contact-form {
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    border-color: var(--border);
+    box-shadow: 0 18px 40px var(--shadow);
+}
+
+.project-card,
+.certificate-card {
+    background: var(--surface);
+    border-color: var(--border);
+}
+
+.skills-section,
+.contact-form input,
+.contact-form textarea {
+    background: var(--surface-strong);
+}
+
+.hero-content .subtitle,
+.expertise-intro,
+.page-hero-content p,
+.certifications-header p,
+.skills-intro,
+.github-summary,
+.info-card p,
+.info-card a {
+    color: var(--muted);
+}
+
+.expertise-card h3,
+.project-title,
+.certificate-card h2,
+.skill-card h3,
+.github-skills-wrapper h2,
+.github-skills-wrapper h3,
+.skill-info,
+.contact-form input,
+.contact-form textarea {
+    color: var(--text);
+}
+
+.expertise-card p,
+.project-description,
+.certificate-card p,
+.skill-card li {
+    color: color-mix(in srgb, var(--text) 72%, var(--muted));
+}
+
+.skill-card li::before {
+    color: var(--accent);
+}
+
+.tech-tags span,
+.project-tech span,
+.certificate-card .skills span,
+.focus-tags span {
+    background: var(--surface-strong);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+footer {
+    border-top-color: var(--border);
+}
+
+footer p {
+    color: var(--muted);
+}
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+    display: inline-grid;
+    place-items: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 10px 24px var(--shadow);
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    background: var(--accent);
+    color: #fff;
 }
 
 /* RESPONSIVE */

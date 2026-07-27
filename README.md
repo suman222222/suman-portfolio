@@ -24,23 +24,89 @@ I am Suman Kapri, a BSc Computing student passionate about software engineering,
 
 ## Projects
 
-### Personal Developer Portfolio
+## 🚀 Featured Projects
 
-Responsive portfolio built from scratch with HTML, CSS, JavaScript, and live GitHub language statistics.
+### 🌐 Suman Kapri Portfolio
+A modern personal portfolio website showcasing my projects, certifications, technical skills, and development journey. Designed with a clean, responsive interface to highlight my work and professional growth.
 
-### ResumePilot
+**Highlights**
+- Responsive design
+- Project showcase
+- Skills section
+- Certifications
+- Contact page
+- Modern UI
 
-Flask-based resume builder with a clean form flow, preview experience, and responsive design.
+**Tech Stack:** HTML5 • CSS3 • JavaScript • Git • GitHub
 
-### DocuMine
+🔗 **Live:** https://suman222222.github.io/suman-portfolio/
 
-AI-powered PDF document analyst using RAG, ChromaDB, Sentence Transformers, Groq API, and source-backed answers.
+---
 
-### TarkariGhar
+### 💼 KapriTech
+KapriTech is my personal portfolio brand website, created to showcase my services, projects, and technical expertise. It represents my professional identity while demonstrating modern web design and frontend development skills.
 
-Responsive vegetable and grocery shopping website with product showcases, categories, and mobile-friendly layout.
+**Highlights**
+- Professional branding
+- Service showcase
+- Responsive design
+- Modern landing page
+- Contact section
 
-## Live Demo
+**Tech Stack:** HTML5 • CSS3 • JavaScript
+
+🔗 **Live:** https://suman222222.github.io/portfolio-kapritech/
+
+---
+
+### 🏨 Stayly Nepal
+A modern hotel booking platform designed for travelers exploring Nepal. It features destination discovery, hotel listings, user authentication, and a responsive booking experience.
+
+**Highlights**
+- Hotel search
+- Booking system
+- User authentication
+- Booking management
+- Responsive interface
+- LocalStorage integration
+
+**Tech Stack:** HTML5 • CSS3 • JavaScript
+
+🔗 **Live:** https://suman222222.github.io/Stayly/
+
+---
+
+### 🥬 TarkariGhar
+A meal-first vegetable marketplace that helps users discover recipes before purchasing fresh ingredients. The platform is designed to simplify meal planning and everyday grocery shopping.
+
+**Highlights**
+- Meal kit browsing
+- Recipe-based shopping
+- Clean user interface
+- Responsive layout
+- Scalable e-commerce concept
+
+**Tech Stack:** HTML5 • CSS3 • JavaScript
+
+🔗 **Live:** https://suman222222.github.io/TarkariGhar/
+
+---
+
+### 💼 Job Portal System
+A Java desktop application connecting job seekers and employers through intelligent skill matching. Built to demonstrate object-oriented programming concepts, business logic, and software design.
+
+**Highlights**
+- Job seeker management
+- Employer management
+- Skill-based job matching
+- Job posting system
+- Application tracking
+- Search & statistics
+
+**Tech Stack:** Java • BlueJ • Git • GitHub
+
+🔗 **Repository:** https://github.com/suman222222/JobPortalSystem
+
 
 Open `index.html` in a browser or deploy the site with GitHub Pages.
 

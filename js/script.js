@@ -4,6 +4,36 @@ const githubUsername = "suman222222";
 // Words for typing animation
 const words = ['Networks', 'Code', 'Solutions', 'Interfaces'];
 
+const themeStorageKey = "suman-portfolio-theme";
+
+function getPreferredTheme() {
+    const savedTheme = localStorage.getItem(themeStorageKey);
+    if (savedTheme === "light" || savedTheme === "dark") return savedTheme;
+    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+}
+
+function applyTheme(theme) {
+    document.body.classList.toggle("light-theme", theme === "light");
+    document.querySelectorAll(".theme-toggle").forEach((button) => {
+        const icon = button.querySelector(".theme-icon");
+        button.setAttribute("aria-label", theme === "light" ? "Switch to dark theme" : "Switch to light theme");
+        button.setAttribute("title", theme === "light" ? "Switch to dark theme" : "Switch to light theme");
+        if (icon) icon.textContent = theme === "light" ? "☾" : "☀";
+    });
+}
+
+function setupThemeToggle() {
+    applyTheme(getPreferredTheme());
+
+    document.querySelectorAll(".theme-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+            const nextTheme = document.body.classList.contains("light-theme") ? "dark" : "light";
+            localStorage.setItem(themeStorageKey, nextTheme);
+            applyTheme(nextTheme);
+        });
+    });
+}
+
 // ============================================================
 //  TYPING ANIMATION
 // ============================================================
@@ -209,6 +239,8 @@ function setupProjectLinks() {
 //  START EVERYTHING ON PAGE LOAD
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
+    setupThemeToggle();
+
     // 1. Typing Animation (only on pages with .dynamic-text)
     if (document.querySelector('.dynamic-text')) {
         typeEffect();
