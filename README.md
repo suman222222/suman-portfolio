@@ -22,10 +22,7 @@ I am Suman Kapri, a BSc Computing student passionate about software engineering,
 * Git
 * GitHub
 
-## Projects
-
-## 🚀 Featured Projects
-
+## 🚀 Featured projects
 ### 🌐 Suman Kapri Portfolio
 A modern personal portfolio website showcasing my projects, certifications, technical skills, and development journey. Designed with a clean, responsive interface to highlight my work and professional growth.
 
@@ -39,9 +36,11 @@ A modern personal portfolio website showcasing my projects, certifications, tech
 
 **Tech Stack:** HTML5 • CSS3 • JavaScript • Git • GitHub
 
+
+--
+
 🔗 **Live:** https://suman222222.github.io/suman-portfolio/
 
----
 
 ### 💼 KapriTech
 KapriTech is my personal portfolio brand website, created to showcase my services, projects, and technical expertise. It represents my professional identity while demonstrating modern web design and frontend development skills.
@@ -116,7 +115,6 @@ Email: [kaprisuman222@gmail.com](mailto:kaprisuman222@gmail.com)
 GitHub: [suman222222](https://github.com/suman222222)  
 LinkedIn: [suman-kapri](https://www.linkedin.com/in/suman-kapri/)
 
-## Author
 
 Suman Kapri
 
