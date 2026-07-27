@@ -37,7 +37,7 @@ A modern personal portfolio website showcasing my projects, certifications, tech
 **Tech Stack:** HTML5 • CSS3 • JavaScript • Git • GitHub
 
 
---
+---
 
 🔗 **Live:** https://suman222222.github.io/suman-portfolio/
 
@@ -107,7 +107,11 @@ A Java desktop application connecting job seekers and employers through intellig
 🔗 **Repository:** https://github.com/suman222222/JobPortalSystem
 
 
-Open `index.html` in a browser or deploy the site with GitHub Pages.
+## 🌐 Live Website
+
+Visit the portfolio here:
+
+**https://suman222222.github.io/suman-portfolio/**
 
 ## Contact
 
