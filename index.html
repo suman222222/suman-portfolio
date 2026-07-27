@@ -1,262 +1,190 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head> <meta charset="UTF-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-         <title>Suman Kapri | Software Developer & AI Builder</title>
-         <meta name="description" content="Portfolio of Suman Kapri, a BSc Computing student building software, AI applications, web projects, and networking solutions." />
-         <!-- Premium Google Font --> 
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-           <link rel="stylesheet" href="css/style.css" /> 
-        </head>
-
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suman Kapri | Software Developer & AI Builder</title>
+    <meta name="description" content="Portfolio of Suman Kapri, a BSc Computing student building software, AI applications, web projects, and networking solutions." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="home-page">
 
 <header>
     <nav>
-        <div class="logo">Suman Kapri</div>
-
+        <a class="logo" href="index.html">Suman<span>.</span></a>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><button class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme"><span class="theme-icon">☀</span></button></li>
         </ul>
     </nav>
 </header>
 
-<!-- HERO -->
-
-<section class="hero">
-
-    <div class="floating-blob blob-1"></div>
-    <div class="floating-blob blob-2"></div>
-
-    <div class="hero-content">
-
-        <img src="assets/suman-profile.jpg" alt="Suman Kapri">
-
-        <h1>
-            Hi, I'm <span>Suman Kapri</span>
-        </h1>
-
-        <p class="subtitle">
-            Computing Student • Software Developer • AI Builder
-        </p>
-
-        <div class="typing-wrapper">
-            <span class="static-text">I build </span>
-            <span class="dynamic-text">AI Applications</span>
+<main>
+    <section class="home-hero">
+        <div class="home-hero-copy">
+            <p class="hero-kicker">Hi, I'm</p>
+            <h1>SUMAN KAPRI</h1>
+            <p class="hero-degree">B.Sc. Computing Student</p>
+            <p class="hero-role">Software Developer • UI/UX Designer • AI Enthusiast</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-glow">View Projects</a>
+                <a href="Resume Suman Kapri.pdf" class="btn-outline" download>Download CV</a>
+            </div>
         </div>
+        <div class="home-hero-visual" aria-label="Suman Kapri portrait">
+            <div class="portrait-frame">
+                <img src="assets/suman-profile.jpg" alt="Suman Kapri" />
+            </div>
+        </div>
+    </section>
 
-        <div class="tech-tags">
+    <section class="home-section quick-stats" aria-label="Quick stats">
+        <div class="stat-card">
+            <span>Projects</span>
+            <strong>8+</strong>
+        </div>
+        <div class="stat-card">
+            <span>Certificates</span>
+            <strong>5+</strong>
+        </div>
+        <div class="stat-card">
+            <span>Technologies</span>
+            <strong>15+</strong>
+        </div>
+        <div class="stat-card">
+            <span>GitHub</span>
+            <strong>Contributions</strong>
+        </div>
+    </section>
+
+    <section class="home-section about-panel" id="about">
+        <div class="about-photo">
+            <img src="assets/suman-profile.jpg" alt="Small portrait of Suman Kapri" />
+        </div>
+        <div class="about-copy">
+            <p class="section-label">About Me</p>
+            <h2>Building practical software with clean design and curiosity.</h2>
+            <p>
+                I am a BSc Computing student passionate about software engineering,
+                AI-powered applications, web technologies, and solving practical
+                problems through technology.
+            </p>
+            <a href="skills.html">Read More →</a>
+        </div>
+    </section>
+
+    <section class="home-section" id="tech-stack">
+        <div class="section-heading">
+            <p class="section-label">Tech Stack</p>
+            <h2>Tools I use to build and ship ideas.</h2>
+        </div>
+        <div class="tech-card-grid">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
             <span>Java</span>
             <span>Python</span>
-            <span>JavaScript</span>
-            <span>Networking</span>
-            <span>AI</span>
+            <span>Git</span>
+            <span>GitHub</span>
             <span>MySQL</span>
+            <span>Figma</span>
+            <span>VS Code</span>
         </div>
-
-        <a href="projects.html" class="btn-glow">
-            Explore My Projects →
-        </a>
-
-    </div>
-
-</section>
-
-<!-- GitHub Skills -->
-
-<section class="expertise-section">
-
-<div class="expertise-container">
-
-<h2>GitHub <span>Tech Stack</span></h2>
-
-<p id="githubSkillSummary">
-Loading languages from GitHub...
-</p>
-
-<div id="githubSkillBars"></div>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="expertise-section">
-
-<div class="expertise-container">
-
-<h2>About Me</h2>
-
-<p class="expertise-intro">
-
-I'm a BSc Computing student passionate about software engineering, AI-powered applications, networking, and solving real-world problems through technology. I enjoy learning by building practical projects and continuously improving my development skills.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- FEATURED PROJECTS -->
-
-<section class="expertise-section">
-
-<div class="expertise-container">
-
-<h2>Featured <span>Projects</span></h2>
-
-<div class="expertise-grid">
-
-<div class="expertise-card">
-
-<div class="icon">🌐</div>
-
-<h3>Suman Kapri Portfolio</h3>
-
-<p>Modern personal portfolio showcasing projects, certifications, technical skills, and development journey.</p>
-
-<a href="projects.html">View Project →</a>
-
-</div>
-
-<div class="expertise-card">
-
-<div class="icon">💼</div>
-
-<h3>KapriTech</h3>
-
-<p>Personal portfolio brand website presenting services, projects, technical expertise, and professional identity.</p>
-
-<a href="projects.html">View Project →</a>
-
-</div>
-
-<div class="expertise-card">
-
-<div class="icon">🏨</div>
-
-<h3>Stayly Nepal</h3>
-
-<p>Hotel booking platform for travelers exploring Nepal with listings, authentication, and booking management.</p>
-
-<a href="projects.html">View Project →</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- EXPERTISE -->
-
-<section class="expertise-section">
-
-<div class="expertise-container">
-
-<h2>My Expertise</h2>
-
-<div class="expertise-grid">
-
-<div class="expertise-card">
-
-<div class="icon">💻</div>
-
-<h3>Software Development</h3>
-
-<p>Building responsive web applications using Java, Python, HTML, CSS, JavaScript and MySQL.</p>
-
-</div>
-
-<div class="expertise-card">
-
-<div class="icon">🤖</div>
-
-<h3>Artificial Intelligence</h3>
-
-<p>Developing Retrieval-Augmented Generation (RAG) applications with embeddings, vector databases and modern LLM APIs.</p>
-
-</div>
-
-<div class="expertise-card">
-
-<div class="icon">🌐</div>
-
-<h3>Networking</h3>
-
-<p>Designing and configuring networks using Cisco Packet Tracer while learning CCNA concepts.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CERTIFICATIONS -->
-
-<section class="expertise-section">
-
-<div class="expertise-container">
-
-<h2>Latest <span>Certifications</span></h2>
-
-<p class="expertise-intro">
-
-Continuously improving my knowledge through industry-recognized certifications in cybersecurity, networking and software development.
-
-</p>
-
-<a href="certifications.html" class="btn-glow">
-
-View Certifications →
-
-</a>
-
-</div>
-
-</section>
-
-
-
-<section class="expertise-section">
-
-<div class="expertise-container">
-
-<h2>Let's Build Something Great</h2>
-
-<p class="expertise-intro">
-
-I'm always interested in collaborating on innovative software, AI and web development projects.
-
-</p>
-
-        <a href="contact.html"
-class="btn-glow">
-
-Start a Conversation →
-
-</a>
-
-</div>
-
-</section>
+    </section>
+
+    <section class="home-section" id="projects">
+        <div class="section-heading">
+            <p class="section-label">Featured Projects</p>
+            <h2>Selected work from my portfolio.</h2>
+        </div>
+        <div class="home-project-grid">
+            <article class="home-project-card">
+                <div class="project-thumb initials">SK</div>
+                <h3>Portfolio</h3>
+                <p>Responsive personal portfolio with project, skills, certification, and contact sections.</p>
+                <div class="mini-links">
+                    <a href="https://suman222222.github.io/suman-portfolio/" target="_blank">Live</a>
+                    <a href="https://github.com/suman222222/suman-portfolio" target="_blank">GitHub</a>
+                </div>
+            </article>
+            <article class="home-project-card">
+                <div class="project-thumb initials">SN</div>
+                <h3>Stayly</h3>
+                <p>Hotel booking platform for Nepal with listings, authentication, and booking management.</p>
+                <div class="mini-links">
+                    <a href="https://suman222222.github.io/Stayly/" target="_blank">Live</a>
+                    <a href="projects.html">Details</a>
+                </div>
+            </article>
+            <article class="home-project-card">
+                <div class="project-thumb">
+                    <img src="assets/tarkarighar-preview.png" alt="TarkariGhar preview" />
+                </div>
+                <h3>TarkariGhar</h3>
+                <p>Meal-first vegetable marketplace for recipe-based grocery shopping.</p>
+                <div class="mini-links">
+                    <a href="https://suman222222.github.io/TarkariGhar/" target="_blank">Live</a>
+                    <a href="https://github.com/suman222222/TarkariGhar" target="_blank">GitHub</a>
+                </div>
+            </article>
+            <article class="home-project-card">
+                <div class="project-thumb initials">JP</div>
+                <h3>Job Portal System</h3>
+                <p>Java desktop application for job seekers, employers, skill matching, and applications.</p>
+                <div class="mini-links">
+                    <a href="https://github.com/suman222222/JobPortalSystem" target="_blank">GitHub</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="home-section certifications-strip">
+        <div>
+            <p class="section-label">Certifications</p>
+            <h2>Continuous learning, documented.</h2>
+        </div>
+        <ul>
+            <li>Cisco Cybersecurity</li>
+            <li>Anthropic AI Fluency</li>
+            <li>More learning in progress</li>
+        </ul>
+        <a href="certifications.html">View Certificates →</a>
+    </section>
+
+    <section class="home-section journey-section">
+        <div class="section-heading">
+            <p class="section-label">Learning Journey</p>
+            <h2>2026 Timeline</h2>
+        </div>
+        <ol class="timeline">
+            <li>Started B.Sc Computing</li>
+            <li>Built Portfolio</li>
+            <li>Built Stayly</li>
+            <li>Java OOP Projects</li>
+            <li>AI Learning</li>
+            <li>More projects in progress</li>
+        </ol>
+    </section>
+
+    <section class="home-section contact-cta" id="contact">
+        <p class="section-label">Contact</p>
+        <h2>Ready to collaborate?</h2>
+        <div class="contact-actions">
+            <a href="mailto:kaprisuman222@gmail.com" class="btn-glow">Email Me</a>
+            <a href="https://www.linkedin.com/in/suman-kapri/" target="_blank" class="btn-outline">LinkedIn</a>
+            <a href="https://github.com/suman222222" target="_blank" class="btn-outline">GitHub</a>
+        </div>
+    </section>
+</main>
 
 <footer>
-
-<p>© 2026 Suman Kapri • Built with HTML, CSS & JavaScript</p>
-
+    <p>© 2026 Suman Kapri</p>
 </footer>
 
 <script src="js/script.js"></script>
-
 </body>
 </html>
