@@ -1,120 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Suman Kapri</title>
-    <meta name="description" content="Contact Suman Kapri for software development, AI application, web development, and collaboration opportunities.">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta name="description" content="Get in touch with Suman Kapri for collaborations, projects, or inquiries." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <div class="logo">Suman Kapri</div>
+    <header>
+        <nav>
+            <div class="logo">Suman<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="https://github.com/suman222222" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><button class="theme-toggle" type="button"><span class="theme-icon">☀</span></button></li>
+            </ul>
+        </nav>
+    </header>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li><button class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme"><span class="theme-icon">☀</span></button></li>
-        </ul>
-    </nav>
-</header>
-
-
-
-<section class="contact-header">
-
-    <h1>Contact Me</h1>
-
-    <p>
-        Let's connect! Whether you have an opportunity, a project idea,
-        or just want to say hello, I'd love to hear from you.
-    </p>
-
-</section>
-
-<!-- Contact Section -->
-
-<section class="contact-container">
-
-    
-
-    <div class="contact-info">
-
-        <div class="info-card">
-            <i class="fas fa-envelope"></i>
-
-            <h3>Email</h3>
-
-            <p><a href="mailto:kaprisuman222@gmail.com">kaprisuman222@gmail.com</a></p>
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Get In <span>Touch</span></h1>
+            <p>Have a project idea, collaboration proposal, or just want to say hello? Reach out!</p>
         </div>
+    </section>
 
-        <div class="info-card">
-            <i class="fab fa-linkedin"></i>
+    <section class="contact-section">
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project Collaboration" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+                </div>
+                <button type="submit" class="btn-glow">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
 
-            <h3>LinkedIn</h3>
-
-            <p><a href="https://www.linkedin.com/in/suman-kapri/" target="_blank">linkedin.com/in/suman-kapri</a></p>
+            <div class="contact-social">
+                <a href="mailto:kaprisuman222@gmail.com" target="_blank" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/suman222222" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/suman-kapri/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="info-card">
-            <i class="fab fa-github"></i>
-
-            <h3>GitHub</h3>
-
-            <p><a href="https://github.com/suman222222" target="_blank">github.com/suman222222</a></p>
+    <footer>
+        <p>© 2026 Suman Kapri</p>
+        <div class="footer-social">
+            <a href="https://github.com/suman222222" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/suman-kapri/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
+    </footer>
 
-        <div class="info-card">
-            <i class="fas fa-location-dot"></i>
-
-            <h3>Location</h3>
-
-            <p>Kathmandu, Nepal</p>
-        </div>
-
-    </div>
-
-    
-
-    <div class="contact-form">
-
-        <form action="mailto:kaprisuman222@gmail.com" method="post" enctype="text/plain">
-
-            <input type="text" placeholder="Your Name" required>
-
-            <input type="email" placeholder="Your Email" required>
-
-            <input type="text" placeholder="Subject">
-
-            <textarea rows="6" placeholder="Your Message"></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Suman Kapri • Available for collaboration</p>
-</footer>
-
-<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
