@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suman Kapri | Projects</title>
+    <meta name="description" content="Software, AI, web development, and networking projects by Suman Kapri." />
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -95,11 +96,13 @@
             transition: width 0.3s ease;
         }
 
-        .nav-links li a:hover::after {
+        .nav-links li a:hover::after,
+        .nav-links li a.active::after {
             width: 100%;
         }
 
-        .nav-links li a:hover {
+        .nav-links li a:hover,
+        .nav-links li a.active {
             color: #fff;
         }
 
@@ -488,12 +491,11 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>
-                    <a href="https://github.com/suman222222" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/suman222222" target="_blank" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                 </li>
             </ul>
         </nav>
@@ -564,11 +566,8 @@
                         <span>Web App</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" target="_blank" class="btn-project">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/suman222222/resumepilot" target="_blank" class="btn-project demo">
-                            <i class="fab fa-github"></i> Code
+                        <a href="https://github.com/suman222222/resumepilot" target="_blank" class="btn-project">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
@@ -652,39 +651,40 @@
                 </div>
             </div>
 
-        </div>
-        
-        <div class="project-card">
-            <img src="assets/tarkarighar-preview.png"
-     alt="TarkariGhar Project"
-     class="project-image">
-            <h3>🥬 TarkariGhar</h3>
-            <p>
-                 A responsive vegetable and grocery shopping website designed with a clean,
-                  modern interface. The project focuses on creating an intuitive online
-                  shopping experience with product showcases, category sections, and a
-                  mobile-friendly layout.
-            </p>
-            <div class="tech-stack">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Responsive Design</span>
+            <div class="project-card">
+                <div class="project-image">
+                    <img
+                    src="assets/tarkarighar-preview.png"
+                    alt="TarkariGhar grocery website screenshot"
+                    onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-icon').classList.add('show');"
+                    />
+                    <span class="fallback-icon">T</span>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">E-commerce • Responsive Website</span>
+                    <h3 class="project-title">TarkariGhar</h3>
+                    <p class="project-description">
+                        A responsive vegetable and grocery shopping website with a clean,
+                        modern interface, product showcases, category sections, and a
+                        mobile-friendly layout.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://suman222222.github.io/TarkariGhar" target="_blank" class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/suman222222/TarkariGhar" target="_blank" class="btn-project demo">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="project-links">
-                <a href="https://suman222222.github.io/TarkariGhar"
-                target="_blank">
-                Live Demo
-            </a>
-            
-            <a href="https://github.com/suman222222/TarkariGhar"
-             target="_blank">
-             GitHub
-        </a>
-    </div>
-
-</div>
+        </div>
         <!-- end projects-container -->
     </section>
 
